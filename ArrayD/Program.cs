@@ -1,11 +1,11 @@
 ﻿namespace Array3D;
 
-class program
+class Program
 {
     static void Main(string[] args)
     {
         //3D: Creare, Leggere, Modificare, iterare foreach e for
-        string[,,] codici = new string[3, 2, 2]
+        string[,,] array3D = new string[3, 2, 2]
         {
             {
                 { "100", "101"}, // Riga 0 colonna 0
@@ -21,11 +21,34 @@ class program
             }
         };
 
+        // Prima dimensione 
+        for (int dim1 = 0; dim1 < array3D.GetLength(0); dim1++)
+        {
+            // Seconda dimensione 
+            for (int dim2 = 0; dim2 < array3D.GetLength(1); dim2++)
+            {
+                for (int dim3 = 0; dim3 < array3D.GetLength(2); dim3++)
+                {
+                    Console.WriteLine($"Sono in dim1 {dim1}, dim2 {dim2}, dim3 {dim3}");
+                    Console.WriteLine($"Il valore è: {array3D[dim1, dim2, dim3]}");
+                }
+            }
+        }
+
+
+
         // Leggiamo
+        Console.WriteLine("Prima della modifica " + array3D[0, 1, 1]);
 
-        // Modificare 
+        // Modifica di un valore 
+        array3D[0, 1, 1] = "999";
+        Console.WriteLine("\nDopo la modifica");
+        Console.WriteLine("codici[0,1,1] = " + array3D[0, 1, 1]);
 
 
-        // Iterazione con forheach e for 
+
+        // LETTURA CON FOREACH
+        foreach (string codice in array3D)
+            Console.WriteLine(codice);
     }
 }
