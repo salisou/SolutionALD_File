@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="ArrayCollection/ArrayCollection.csproj" />
   <Project Path="ArrayD/Array3D.csproj" Id="f1140bc8-e65c-4770-8f10-3044ac798066" />
+  <Project Path="GestioneFile/GestioneFile.csproj" Id="851f5e14-293e-45bb-89a7-7a74f55ef984" />
 </Solution>
