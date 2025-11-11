@@ -7,7 +7,7 @@ class Program
 
     /// <summary>
     /// AppContext.BaseDirectory: Ottiene il percorso deve viene eseguito il programma (bin/Debug/ReportUniversita.xlsx)
-    /// Parent!.FullName: Risale di due carlle (bin -> Debug -> net8.0) per tornare alla radice del progetetto
+    /// Parent!.FullName: Risale di due cartelle (bin -> Debug -> net8.0) per tornare alla radice del progetetto
     /// ath.Combine(...)	Combina il percorso del progetto con il nome del file Excel.
     /// Console.WriteLine(...)	Serve solo per verificare il percorso(puoi toglierlo in produzione).
     /// </summary>
