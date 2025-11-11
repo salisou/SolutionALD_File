@@ -1,4 +1,4 @@
-﻿namespace ArrayCollection;
+﻿namespace Array3D;
 
 class program
 {
@@ -20,7 +20,6 @@ class program
                 { "503", "904" }
             }
         };
-        // git clone https://github.com/salisou/SolutionALD_File.git
 
         // Leggiamo
 
