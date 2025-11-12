@@ -22,4 +22,12 @@ class Program
     {
 
     }
+
+    //=============================
+    // METODI DI SUPORTO
+    //=============================
+    static List<Dictionary<string, object>> CreaStudenti = new()
+    {
+
+    }
 }
