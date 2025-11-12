@@ -1,3 +1,3 @@
 # SolutionALD_File
 
-Una volta scaricato estratto: Compilare il progrtto prima di avviare
+Una volta completato il download e l’estrazione dei file, procedere con la compilazione del progetto prima di avviarne l’esecuzione.
