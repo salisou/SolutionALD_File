@@ -1,5 +1,21 @@
 ﻿
 
+# Struttura del progetto (cartelle pulite)
+
+    📂 EsportaDatiExcel
+    │
+    ├── 📁 Models
+    │     ├── Studente.cs
+    │     ├── Corso.cs
+    │     ├── Iscrizione.cs
+    │     └── Voto.cs
+    │
+    ├── 📁 Services
+    │     ├── DatiMock.cs
+    │     └── ReportExcel.cs
+    │
+    └── Program.cs
+
 
 # Spiegazione dettagliata
 
