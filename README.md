@@ -1,3 +1,11 @@
 # SolutionALD_File
 
-Una volta completato il download e l’estrazione dei file, procedere con la compilazione del progetto prima di avviarne l’esecuzione.
+## Istruzioni per l’utilizzo
+
+1. Scaricare ed estrarre il repository.
+2. Compilare tutti i progetti inclusi:
+   - **ArrayCollection**
+   - **ArrayD**
+   - **EsportareDatiExcel**
+   - **GestioneFile**
+3. Una volta completata la compilazione, avviare il progetto desiderato.
