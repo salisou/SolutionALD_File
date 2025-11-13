@@ -1,4 +1,7 @@
-﻿# Spiegazione dettagliata
+﻿
+
+
+# Spiegazione dettagliata
 
     | Parte                                  | Descrizione                                                     |
     | -------------------------------------- | --------------------------------------------------------------- |

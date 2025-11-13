@@ -15,12 +15,16 @@
 
  */
 
-using ClosedXML.Excel;  // 📦 Libreria per creare file Excel facilmente
+using ClosedXML.Excel;
+using EsportareDatiExcel.Models;  // 📦 Libreria per creare file Excel facilmente
 
 class Program
 {
     static void Main()
     {
+        Studente studente = new Studente();
+
+
         // 1️⃣ CREAZIONE DELLE "TABELLE"
         List<Dictionary<string, object>> studenti = CreaStudenti();
         List<Dictionary<string, object>> corsi = CreaCorsi();
@@ -158,7 +162,7 @@ class Program
 
     static List<Dictionary<string, object>> CreaCorsi() =>
     [
-        new() { ["CorsoId"]=1, ["NomeCorso"]="Informatica", ["Crediti"]=6 },
+        new() { ["CorsoId"]=1, ["NomeCorso"]="Programmazione C#/.Net", ["Crediti"]=6 },
         new() { ["CorsoId"]=2, ["NomeCorso"]="Matematica", ["Crediti"]=8 },
         new() { ["CorsoId"]=3, ["NomeCorso"]="Storia", ["Crediti"]=5 }
     ];
