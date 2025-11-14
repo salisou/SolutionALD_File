@@ -49,9 +49,9 @@ Il file ReportUniversita.xlsx conterrà 5 fogli:
 
     | Ruolo           | Esempio nel codice          | Cosa fa                                         |
     | --------------- | --------------------------- | ----------------------------------------------- |
-    | 👩‍🏫 *Model*   | `Studente`, `Corso`, `Voto` | Sono le *entità* del sistema (i “dati”).        |
-    | 🧑‍🔧 *Service* | `ReportExcel`, `DatiMock`   | Sono i *lavoratori* che agiscono sui dati.      |
-    | 🧑‍💻 *Program* | `Program.cs`                | È il *coordinatore*: decide chi deve fare cosa. |
+    | 👩‍🏫 *Model*      | `Studente`, `Corso`, `Voto` | Sono le *entità* del sistema (i “dati”).        |
+    | 🧑‍🔧 *Service*    | `ReportExcel`, `DatiMock`   | Sono i *lavoratori* che agiscono sui dati.      |
+    | 🧑‍💻 *Program*    | `Program.cs`                | È il *coordinatore*: decide chi deve fare cosa. |
 
 ## ⚙️ Cos’è la logica di un programma?
 

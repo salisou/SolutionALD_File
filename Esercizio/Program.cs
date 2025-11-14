@@ -11,3 +11,7 @@
  *    Chiedi all'utente se vuole ordinare qualcosa da bere?
  *    Chiedi se voule il conto
  *    Chiedi all'utente se peaga con Carta/Bancomat 
+ *    Ringrazia alla fine l'utente con un regalo🎉
+ *   
+ */
+
