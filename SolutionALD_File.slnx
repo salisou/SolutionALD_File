@@ -5,4 +5,5 @@
   <Project Path="EsportareDatiExcel/EsportaDatiExcel.csproj" Id="1889bfa3-89cd-4fee-bf02-190d961c8389" />
   <Project Path="GeneratoreCV/GeneratoreCV.csproj" Id="8fd7e69d-0300-40d1-bf1a-1cb8c10d37b8" />
   <Project Path="GestioneFile/GestioneFile.csproj" Id="851f5e14-293e-45bb-89a7-7a74f55ef984" />
+  <Project Path="WinFormsApp1/WinFormsApp1.csproj" Id="6ec0d904-d86e-4f1a-897a-a0e0aa76ba4d" />
 </Solution>

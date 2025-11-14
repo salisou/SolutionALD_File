@@ -26,7 +26,7 @@ public static class CVService
 
                 // 🔹 Header (nome e titolo)
                 page.Header().Text($"{persona.NomeCompleto()} - {persona.Professione}")
-                    .Bold().FontSize(18).AlignCenter();
+                    .Bold().FontSize(24).AlignCenter();
 
                 // 🔹 Corpo del CV
                 page.Content().Column(column =>
