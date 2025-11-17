@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="ArrayCollection/ArrayCollection.csproj" />
   <Project Path="ArrayD/Array3D.csproj" Id="f1140bc8-e65c-4770-8f10-3044ac798066" />
+  <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="803ae611-3c17-4627-87bf-f8ce6e475c02" />
   <Project Path="Esercizio/Esercizio.csproj" Id="759fec0b-f3dc-49a1-a2c8-0886715b15f0" />
   <Project Path="EsportareDatiExcel/EsportaDatiExcel.csproj" Id="1889bfa3-89cd-4fee-bf02-190d961c8389" />
   <Project Path="GeneratoreCV/GeneratoreCV.csproj" Id="8fd7e69d-0300-40d1-bf1a-1cb8c10d37b8" />
