@@ -1,3 +1,4 @@
+using WinFormsApp1.Helpers;
 using WinFormsApp1.Views;
 
 namespace WinFormsApp1
@@ -7,7 +8,23 @@ namespace WinFormsApp1
         public frmDemo1()
         {
             InitializeComponent();
+            Loader();
         }
+
+        private void Loader()
+        {
+            var pwdBox = new PasswordTextBox()
+            {
+                Location = new Point(290, 192),   // <— posizione corretta
+                Width = 338,
+                Height = 34,
+                Placeholder = "Inserisci la password"
+            };
+
+            this.Controls.Add(pwdBox);
+
+        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -19,7 +36,6 @@ namespace WinFormsApp1
             //MessageBox.Show("Attesa di registrazione in corso!");
             frmRegister register = new();
             register.ShowDialog();
-
         }
     }
 }

@@ -31,7 +31,6 @@
             button1 = new Button();
             button2 = new Button();
             label1 = new Label();
-            txtPassword = new TextBox();
             label2 = new Label();
             label3 = new Label();
             lblRegister = new Label();
@@ -74,16 +73,6 @@
             label1.Size = new Size(99, 18);
             label1.TabIndex = 6;
             label1.Text = "Nome Utente";
-            // 
-            // txtPassword
-            // 
-            txtPassword.Font = new Font("Arial", 12F);
-            txtPassword.Location = new Point(287, 192);
-            txtPassword.Name = "txtPassword";
-            txtPassword.PlaceholderText = "Inserisci la passwod";
-            txtPassword.Size = new Size(340, 26);
-            txtPassword.TabIndex = 9;
-            txtPassword.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -156,7 +145,6 @@
             Controls.Add(txtNome);
             Controls.Add(lblRegister);
             Controls.Add(label3);
-            Controls.Add(txtPassword);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button2);
@@ -175,7 +163,6 @@
         private Button button2;
         private Label label1;
         private TextBox textBox1;
-        private TextBox txtPassword;
         private Label label2;
         private Label label3;
         private Label lblRegister;
