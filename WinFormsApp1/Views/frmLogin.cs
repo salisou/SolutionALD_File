@@ -5,6 +5,7 @@ namespace WinFormsApp1
 {
     public partial class frmDemo1 : Form
     {
+        private PasswordTextBox txtPassword;
         public frmDemo1()
         {
             InitializeComponent();
@@ -13,16 +14,14 @@ namespace WinFormsApp1
 
         private void Loader()
         {
-            var pwdBox = new PasswordTextBox()
+            txtPassword = new()
             {
                 Location = new Point(290, 192),   // <— posizione corretta
                 Width = 338,
-                Height = 34,
-                Placeholder = "Inserisci la password"
+                Height = 34
             };
 
-            this.Controls.Add(pwdBox);
-
+            this.Controls.Add(txtPassword);
         }
 
 
@@ -33,9 +32,26 @@ namespace WinFormsApp1
 
         private void lblRegister_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Attesa di registrazione in corso!");
             frmRegister register = new();
             register.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nomeUtente = txtNome.Text;
+            string password = txtPassword.Text;
+
+            if (nomeUtente == "Moussa" && password == "password@123")
+            {
+                frmMain main = new();
+                this.Hide();
+                main.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Attenzione verifica il Nome dell'utente e la password");
+            }
         }
     }
 }

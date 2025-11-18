@@ -134,13 +134,15 @@ namespace WinFormsApp1.Helpers
         /// Proprietà pubblica per leggere/scrivere il valore della password.
         /// È meglio NON sovrascrivere la proprietà Text del controllo base.
         /// </summary>
-        public string TextValue
+        [Browsable(true)]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public override string Text
         {
             get => txt.Text;
             set
             {
                 txt.Text = value;
-                Invalidate(); // aggiorna placeholder e UI
+                Invalidate(); // Aggiorna placeholder e UI
             }
         }
     }

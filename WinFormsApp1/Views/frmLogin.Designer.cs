@@ -47,8 +47,9 @@
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 4;
-            button1.Text = "Salva";
+            button1.Text = "Accedi";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -139,6 +140,7 @@
             // frmDemo1
             // 
             AutoScaleMode = AutoScaleMode.None;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(663, 316);
             Controls.Add(label4);
             Controls.Add(pictureBox1);
