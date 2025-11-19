@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class frmDemo1
+    partial class frmLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -137,7 +137,7 @@
             label4.TabIndex = 14;
             label4.Text = "Sistema di authenticazione ";
             // 
-            // frmDemo1
+            // frmLogin
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ActiveCaption;
@@ -152,7 +152,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "frmDemo1";
+            Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Registrazione";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

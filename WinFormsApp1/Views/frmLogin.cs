@@ -1,12 +1,14 @@
+using Newtonsoft.Json;
 using WinFormsApp1.Helpers;
+using WinFormsApp1.Modes;
 using WinFormsApp1.Views;
 
 namespace WinFormsApp1
 {
-    public partial class frmDemo1 : Form
+    public partial class frmLogin : Form
     {
         private PasswordTextBox txtPassword;
-        public frmDemo1()
+        public frmLogin()
         {
             InitializeComponent();
             Loader();
@@ -38,11 +40,31 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Legge i dati inseriti
             string nomeUtente = txtNome.Text;
             string password = txtPassword.Text;
 
-            if (nomeUtente == "Moussa" && password == "password@123")
+
+            // Carica gli utenti  dal file JSON
+            List<Utente> utenti = CaricaUtenti();
+
+            // Carica l'utente registrato 
+            Utente? utente = utenti.FirstOrDefault(u =>
+                u.Nome == nomeUtente && u.Passwor == password
+            );
+
+            //foreach (var u in utenti)
+            //{
+            //    if (u.Nome == nomeUtente && u.Password == password)
+            //    {
+            //        utenteTrovato = u;
+            //        break;
+            //    }
+            //}
+
+            if (utente != null)
             {
+                // Login Ok
                 frmMain main = new();
                 this.Hide();
                 main.ShowDialog();
@@ -50,8 +72,21 @@ namespace WinFormsApp1
             }
             else
             {
-                MessageBox.Show("Attenzione verifica il Nome dell'utente e la password");
+                MessageBox.Show("Nome o password errati!", "Errore",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private List<Utente> CaricaUtenti()
+        {
+            string path = "utente.json";
+
+            if (!File.Exists(path))
+                return [];
+
+
+            string json = File.ReadAllText(path);
+            return JsonConvert.DeserializeObject<List<Utente>>(json) ?? [];
         }
     }
 }

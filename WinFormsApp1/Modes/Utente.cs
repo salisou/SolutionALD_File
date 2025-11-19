@@ -1,0 +1,10 @@
+﻿namespace WinFormsApp1.Modes
+{
+    public class Utente
+    {
+        public required string Nome { get; set; }
+        public required string Cognome { get; set; }
+        public required string Email { get; set; }
+        public required string Passwor { get; set; }
+    }
+}
