@@ -38,7 +38,7 @@ namespace WinFormsApp1.Views
             {
                 Nome = txtNome.Text,
                 Cognome = txtCognome.Text,
-                Passwor = txtPassword.Text,
+                Password = txtPassword.Text,
                 Email = txtEmail.Text
             };
 

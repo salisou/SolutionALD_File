@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            label1 = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
-            label1 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -44,6 +44,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(917, 34);
             panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(230, 28);
+            label1.TabIndex = 0;
+            label1.Text = "ERP10.2 Gestional ";
             // 
             // panel2
             // 
@@ -63,16 +74,6 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(715, 497);
             panel3.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(170, 25);
-            label1.TabIndex = 0;
-            label1.Text = "ERP10.2 Gestional ";
             // 
             // frmMain
             // 
