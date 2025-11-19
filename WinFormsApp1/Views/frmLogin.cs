@@ -50,8 +50,10 @@ namespace WinFormsApp1
 
             // Carica l'utente registrato 
             Utente? utente = utenti.FirstOrDefault(u =>
-                u.Nome == nomeUtente && u.Passwor == password
+                u.Nome == nomeUtente && u.Password == password
             );
+
+            // SELECT Nome, Password FROM Utente WHERE @nomeUtente = Nome AND @password = Password
 
             //foreach (var u in utenti)
             //{
